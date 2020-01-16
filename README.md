@@ -1,13 +1,19 @@
 # matchstick
 
-An opinionated docker image for datascience with Pytorch.
+An opinionated docker image for data science with Pytorch.
+
+## requirements
+
+- [docker](https://docs.docker.com/install/) >=19.0.0
 
 ## usage
 
 ```bash
-docker run -p 8888:8888 -p 6006:6006 mwilliammyers/matchstick
+docker run --gpus=all -p 8888:8888 -p 6006:6006 mwilliammyers/matchstick
 ```
+
 ## features
+
 - [pytorch](https://pytorch.org)
 - GPU/[CUDA](https://developer.nvidia.com/cuda-toolkit)
 - [pytorch ignite](https://pytorch.org/ignite/)
