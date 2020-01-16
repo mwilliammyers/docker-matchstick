@@ -7,6 +7,7 @@ An opinionated [docker] image for data science with [Pytorch].
 ## requirements
 
 - [docker] >=19.0.0
+- [nvidia-docker] for optional GPU support
 
 ## usage
 
@@ -33,8 +34,9 @@ in which case you will need to run `docker logs matchstick` to view the containe
 - [jupyter notebook]
 - all the rest of the usual suspects like [numpy] etc.
 
-[docker]: https://docs.docker.com/install/
 [pytorch]: https://pytorch.org
+[docker]: https://docs.docker.com/install/
+[nvidia-docker]: https://github.com/NVIDIA/nvidia-docker
 [CUDA]: https://developer.nvidia.com/cuda-toolkit
 [pytorch-ignite]: https://pytorch.org/ignite/
 [tensorboard]: https://www.tensorflow.org/tensorboard
