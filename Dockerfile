@@ -12,8 +12,8 @@ RUN pip --no-cache-dir install \
 	'pandas>=0.25.0' \
 	'tensorboard>=2'
 
-COPY entrypoint.sh entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 EXPOSE 8888 6006
 
-CMD ["./entrypoint.sh"]
+CMD ["/usr/local/bin/./entrypoint.sh"]
