@@ -14,4 +14,6 @@ RUN pip --no-cache-dir install \
 
 COPY entrypoint.sh entrypoint.sh
 
+EXPOSE 8888 6006
+
 CMD ["./entrypoint.sh"]
