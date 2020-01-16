@@ -11,8 +11,10 @@ An opinionated docker image for data science with Pytorch.
 ## usage
 
 ```bash
-docker run --gpus=all -p 8888:8888 -p 6006:6006 mwilliammyers/matchstick
+docker run -it --rm --gpus=all -p 8888:8888 -p 6006:6006 mwilliammyers/matchstick
 ```
+
+and then copy the URL that looks like `http://127.0.0.1:8888/?token=3e9b1ea3e4d9802ae2b3cb89952f944be9fca92f4f278e7f1` into your browser; replacing `127.0.0.1` with the appropriate hostname if necessary.
 
 ## features
 
