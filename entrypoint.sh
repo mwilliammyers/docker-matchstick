@@ -1,5 +1,5 @@
 #!/bin/sh
 
-tensorboard --logdir=runs &
+tensorboard --bind_all --logdir=runs &
 
-jupyter notebook --allow-root --no-browser --port=8888
+jupyter notebook --allow-root --no-browser --ip=* --port=8888
