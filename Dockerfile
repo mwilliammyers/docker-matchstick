@@ -1,11 +1,5 @@
 FROM pytorch/pytorch:1.3-cuda10.1-cudnn7-runtime
 
-RUN apt-get update && \
-	apt-get install -y --no-install-recommends openssl && \
-	apt-get autoremove -y && \
-	apt-get clean autoclean && \
-	rm -rf /var/lib/apt/lists/*
-
 RUN pip --no-cache-dir install \
 	'torch>=1' \
 	'torchvision>=0.4.0' \

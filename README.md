@@ -2,6 +2,8 @@
 
 An opinionated docker image for data science with Pytorch.
 
+**warning**: both jupyter and tensorboard serve **unencrypted** content
+
 ## requirements
 
 - [docker](https://docs.docker.com/install/) >=19.0.0
